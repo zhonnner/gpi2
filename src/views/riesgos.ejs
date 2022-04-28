@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Riesgos</title>
+    <!-- BOOSTRAP-->
+    <!-- Bootstrap -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/darkly/bootstrap.min.css" 
+        integrity="sha512-ZdxIsDOtKj2Xmr/av3D/uo1g15yxNFjkhrcfLooZV5fW0TT7aF7Z3wY1LOA16h0VgFLwteg14lWqlYUQK3to/w==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <script 
+        defer
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" >Proyecto Riesgos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/logged">Inicio <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Informe</a>
+        </li>
+      </ul>
+      <li class="nav-item active"></li> 
+    </div>
+  </nav>
+
+<main> 
+  <h3></h3>
+  <!-- <div class="row">
+    <div class="card-group mt-3"> -->
+      <div class='col-md-3 mt-3 card ' id="tabla_de_proyecto">
+        <form action="/riesgos" method="post" class="card-body">
+          <h3 class='card-title'>Agregar Riesgos</h3>
+        <div class="form-group">
+            <input type="text" name="NombreR" class="form-control" required="text"  placeholder="Nombre del riesgo"> 
+        </div>
+        <div class="form-group">
+            <select  name="Probabilidad" required class="form-control"  placeholder="Probabilidad de ocurrencia del riesgo"> 
+              <option value="" disabled selected hidden>Probabilidad de ocurrencia del riesgo</option>
+              <option value="1">Muy bajo</option>
+              <option value="3">Bajo</option>
+              <option value="5">Moderado</option>
+              <option value="7">Alto</option>
+              <option value="9">Muy alto</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select name="Impacto" required class="form-control"  placeholder="Impacto del riesgo"> 
+              <option value="" disabled selected hidden>Impacto del riesgo</option>
+              <option value="1">Muy bajo</option>
+              <option value="3">Bajo</option>
+              <option value="5">Moderado</option>
+              <option value="7">Alto</option>
+              <option value="9">Muy alto</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="text" name="Tipo" class="form-control"  required="text" placeholder="Tipo de riego"> 
+        </div>
+        <div class="form-group">
+            <textarea rows="3" cols="30" name="Descripcion" class="form-control" required="text" placeholder="Breve descripcion del riesgo"> </textarea>
+        </div>
+        <input type="hidden"  name="ID_P" value='<%= ID[0].ID_P %>'>
+        <a class="btn btn-primary" href="/logged">Salir</a>
+        <input type="submit" class="btn btn-primary">
+        </form>
+      </div>
+
+      <!-- <div class="card mb-3 mt-3"> 
+        <div class="card-body">
+          <h5 class="card-title">Tabla de Probabilidad </h5>
+          <p class="card-text">Use esta tabla como referencia para ingresar sus datos</p>
+        </div>
+        <div>
+          <img class="card-img-bottom" src="imagen.jpg">
+        </div>
+      </div> 
+
+      <div class="card mb-3 mt-3"> 
+        <div class="card-body">
+          <h5 class="card-title">Tabla de impacto </h5>
+          <p class="card-text">Use esta tabla como referencia para ingresar sus datos</p>
+        </div>
+        <div>
+          <img class="card-img-bottom" src="imagen1.jpg" >
+        </div> -->
+       
+      <!-- </div> 
+    </div> -->
+  <!-- </div> -->
+
+</main>
+
+</body>
+</html>
